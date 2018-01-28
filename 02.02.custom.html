@@ -13,12 +13,13 @@
 	<script>
 		var Component = React.createClass({
 			render: function() {
-				return React.DOM.span(null, "私は" + this.props.name + "です");
+				return React.DOM.span(null, "私は" + this.props.name + "です。年齢は" + this.props.age + "歳です。");
 			}
 		});
 		ReactDOM.render(
 			React.createElement(Component, {
 				name: "ボブ",
+				age: "24",
 			}),
 			document.getElementById("app")
 		);
